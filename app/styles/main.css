@@ -79,16 +79,20 @@ body {
 }
 
 
-
 #score-us {
+  padding-top: 10px;
   vertical-align: top;
+  font-size: 64px;
 }
 
 #score-they {
+  padding-top: 10px;
   vertical-align: top;
+  font-size: 64px;
 }
 
 .score {
+  margin: auto;
   background-image: url('../images/scores.png');
   zoom: 0.3;
   width: 256px;
@@ -115,10 +119,19 @@ body {
 }
 
 .stripes-box {
-  display: inline-block;
-  background-image: url('../images/scores.png');
+  margin: auto;
+  cursor: url('../images/stripe.png') 8 8, auto;
+  background-image: url('../images/scores-box.png');
   zoom: 0.3;
   width: 256px;
   height: 256px;
-  background-position: 256px 256px;
+}
+
+.trash-box {
+  margin: auto;
+  cursor: url('../images/stripe.png') 8 8, auto;
+  background-image: url('../images/trash.png');
+  zoom: 0.3;
+  width: 256px;
+  height: 256px;
 }

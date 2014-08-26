@@ -25,7 +25,7 @@
 
 <div class="container">
   <div id="" class="">
-    <table>
+    <table class="table">
       <thead>
         <tr>
           <th class="text-center" >Nosotros</th>
@@ -34,21 +34,29 @@
       </thead>
       <tbody>
         <tr>
-          <td id="score-us" class="text-center" ng-drop="true" ng-drop-success="addScore($data, $event, 'us')">
+          <td id="score-us" class="text-center" ng-drag="true" ng-drag-data="usTeam" ng-drop="true" ng-drop-success="modifyScore($data, $event, 'us')">
             {{ us }}
           </td>
-          <td id="score-they" class="text-center" ng-drop="true" ng-drop-success="addScore($data, $event, 'they')"> 
+          <td id="score-they" class="text-center" ng-drag="true" ng-drag-data="theyTeam" ng-drop="true" ng-drop-success="modifyScore($data, $event, 'they')"> 
             {{ they }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="" ng-drag="true"  ng-drag-data="point" class="stripes-box text-center" draggable="true"> </div>
+          </td>
+          <td>
+            <div id="" ng-drag="true"  ng-drag-data="pointSub" class="trash-box text-center" draggable="true"> </div>
           </td>
         </tr>
       </tbody>
       <tfoot>
-        <th>
-          <!--tr colspan="2"><div class="score-1"></div></tr-->
-        </th>
       </tfoot>
     </table>
   </div>
-    <div id="" ng-drag="true"  ng-drag-data="point" class="stripes-box"> </div>
+
+  <div id="" class="">
+    
+  </div>
 
 </div>
